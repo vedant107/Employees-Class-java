@@ -1,0 +1,40 @@
+package employee;
+
+import java.util.Scanner;
+
+public class Employee {
+	
+	String year2,year3,year4;
+	String nam2,nam3,nam4;
+	String adr2,adr3,adr4;
+
+
+	public static void main(String[] args) {
+		
+		Employee e1 = new Employee();
+		Employee e2 = new Employee();
+		Employee e3 = new Employee();
+		
+								
+			Scanner var = new Scanner (System.in);
+			
+				e1.nam2 = var.nextLine();
+				e1.year2 =var.nextLine();
+				e1.adr2 = var.nextLine();
+				
+				e2.nam3 = var.nextLine();
+				e2.year3 = var.nextLine();
+				e2.adr3 = var.nextLine();
+				
+				e3.nam4 = var.nextLine();
+				e3.year4= var.nextLine();
+				e3.adr4 = var.nextLine();
+				
+				
+				System.out.println("Name\t  Year of joining\t    Address\n");
+				System.out.println(e1.nam2+"\t\t"+e1.year2+"\t\t"+e1.adr2+"\t\t ");
+				System.out.println(e2.nam3+"\t\t"+e2.year3+"\t\t"+e2.adr3+"\t\t ");
+				System.out.println(e3.nam4+"\t\t"+e3.year4+"\t\t"+e3.adr4+"\t\t ");
+	}
+
+}
